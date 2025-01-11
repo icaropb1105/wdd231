@@ -4,11 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Page created by Icaro Angelo covering dynamic web design fundamentals, including HTML, CSS, and JavaScript.">
+    <meta name="author" content="Icaro Angelo">
+    <title>WDD 131 - Dynamic Web Fundamentals - Icaro Angelo</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>hello world</h1>
+    <header>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <img src="images/profile2.jpg" alt="profile" class="profile-image">
+        <span class="profile-name">Icaro Angelo</span>
+    </header>
+
+    <nav>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/i-sgn" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>Course Work</h2>
+            <div class="about-me">
+                <ul>
+                    <li>
+                    <li>
+                    <li>
+                    </li>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="card2">
+            <h2>São Paulo, Brazil</h2>
+            <img src="images/sp.webp" alt="profile" width="300">
+        </section>
+
+        <section class="card3">
+            <h2>Web & Computer Programming</h2>
+        
+            <div class="filter-buttons">
+                <button id="filter-all">All</button>
+                <button id="filter-cse">CSE</button>
+                <button id="filter-wdd">WDD</button>
+            </div>
+        
+            <div id="course-list" class="course-list">
+                
+            </div>
+            <p id="total-credits"></p> <!-- Display Total Credits -->
+        </section>
+    </main>
+
+    <footer>
+        <h3>&copy; <span id="current-year"></span> ⚽ Icaro San Angelo ⚽ Brazil</h3>
+        <p>Last modified on: <span id="last-modified-date"></span></p>
+    </footer>
 </body>
 
 </html>
