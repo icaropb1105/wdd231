@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Dynamic Web Fundamentals. Page created by Icaro Angelo covering dynamic web design fundamentals, including HTML, CSS, and JavaScript.">
+    <meta name="author" content="Icaro Angelo">
+    <title>WDD 231 - Chamber of Commerce - Icaro Angelo</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/base.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="logo-box">
+            <a href="directory.html">
+                <img src="images/favicon.webp" alt="Business Chamber logo" class="logo" width="323">
+            </a>
+        </div>
+
+        <nav class="header-nav" id="nav-menu">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-links">HOME</a></li>
+                <li><a href="discover.html" class="nav-links">DISCOVER</a></li>
+                <li><a href="directory.html" class="nav-links">DIRECTORY</a></li>
+                <li><a href="join.html" class="nav-links">JOIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro-section">
+        <div class="container">
+            <h1>Discover Our Diverse Member Directory</h1>
+            <p>Our Member Directory is a comprehensive resource for discovering the diverse businesses that make up our thriving community. Whether you're looking for industry-leading services, local expertise, or exciting networking prospects, you'll find everything you need right here.</p>
+        </div>
+    </section>
+
+    <section class="business-directory">
+        <div class="container">
+            <h2>Our Featured Businesses</h2>
+            
+            <div class="layout-toggle">
+                <button class="grid-btn" onclick="toggleLayout('grid')">Grid View</button>
+                <button class="list-btn" onclick="toggleLayout('list')">List View</button>
+            </div>
+
+            <div id="businessGrid" class="business-grid">
+                <!-- Business cards will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <h3>Chamber of Commerce</h3>
+            <p><strong>Contact Us</strong></p>
+            <p>📧 chamberofcommerce@gmail.com</p>
+            <p>📞 (956) 241-0129</p>
+            <p>📍 285 Random Ave</p>
+            <p>371 - Guarulhos, SP, Brazil</p>
+        </div>
+        <div class="footer-center">
+            <a href="https://facebook.com" class="social-icon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" class="social-icon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/X_icon.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" class="social-icon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://tiktok.com" class="social-icon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg" alt="TikTok">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>© 2025 Icaro Angelo - WDD231</p>
+            <p>Last modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+    
+    
+    
+
+    <script src="scripts/members.js" defer></script>
+</body>
+
+</html>

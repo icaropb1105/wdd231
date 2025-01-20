@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Business One",
+        "address": "Avenida Paulista, 1000, São Paulo, SP, Brasil",
+        "phone": "(11) 1234-5678",
+        "website": "https://www.businessone.com",
+        "image": "../images/company1.webp",
+        "membershipLevel": 1,
+        "otherInfo": "Dedicated to local services and community support."
+    },
+    {
+        "name": "Business Two",
+        "address": "Rua Oscar Freire, 500, São Paulo, SP, Brasil",
+        "phone": "(11) 2345-6789",
+        "website": "https://www.businesstwo.com",
+        "image": "../images/company2.webp",
+        "membershipLevel": 2,
+        "otherInfo": "Innovative solutions for modern businesses."
+    },
+    {
+        "name": "Business Three",
+        "address": "Praça da Sé, 50, São Paulo, SP, Brasil",
+        "phone": "(11) 3456-7890",
+        "website": "https://www.businessthree.com",
+        "image": "../images/company3.webp",
+        "membershipLevel": 3,
+        "otherInfo": "Leaders in the tech industry."
+    },
+    {
+        "name": "Business Four",
+        "address": "Avenida Brigadeiro Faria Lima, 1200, São Paulo, SP, Brasil",
+        "phone": "(11) 4567-8901",
+        "website": "https://www.businessfour.com",
+        "image": "../images/company4.webp",
+        "membershipLevel": 2,
+        "otherInfo": "Pioneers in environmental sustainability."
+    },
+    {
+        "name": "Business Five",
+        "address": "Rua Augusta, 250, São Paulo, SP, Brasil",
+        "phone": "(11) 5678-9012",
+        "website": "https://www.businessfive.com",
+        "image": "../images/company5.webp",
+        "membershipLevel": 3,
+        "otherInfo": "Cutting-edge solutions in digital marketing."
+    },
+    {
+        "name": "Business Six",
+        "address": "Avenida Rebouças, 800, São Paulo, SP, Brasil",
+        "phone": "(11) 6789-0123",
+        "website": "https://www.businesssix.com",
+        "image": "../images/company6.webp",
+        "membershipLevel": 1,
+        "otherInfo": "Committed to excellence in healthcare services."
+    },
+    {
+        "name": "Business Seven",
+        "address": "Rua 25 de Março, 150, São Paulo, SP, Brasil",
+        "phone": "(11) 7890-1234",
+        "website": "https://www.businessseven.com",
+        "image": "../images/company7.webp",
+        "membershipLevel": 1,
+        "otherInfo": "Empowering businesses with advanced financial solutions."
+    },
+    {
+        "name": "Business Eight",
+        "address": "Avenida Ibirapuera, 3000, São Paulo, SP, Brasil",
+        "phone": "(11) 8901-2345",
+        "website": "https://www.businesseight.com",
+        "image": "../images/company8.webp",
+        "membershipLevel": 2,
+        "otherInfo": "Fostering innovation in the fashion industry."
+    }
+]
