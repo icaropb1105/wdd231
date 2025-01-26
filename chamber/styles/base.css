@@ -409,3 +409,370 @@ footer {
         font-size: 16px;
     }
 }
+
+
+
+
+/* home page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
+
+.hero {
+    position: relative;
+    min-height: 600px;
+    height: auto;
+    background: url('../images/sp.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+.hero-card {
+    background-color: rgba(8, 28, 49, 0.9);
+    border-radius: 10px;
+    padding: 30px 30px;
+    max-width: 500px;
+    width: 80%;
+    text-align: center;
+    margin-left: 100px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-card h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-btn {
+    background-color: #4CAF50;
+}
+
+.explore-btn {
+    background-color: #2196F3;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.events {
+    flex: 1;
+    padding: 1.5rem;
+    text-align: center;
+    border: 2px solid #ddd;
+}
+
+.events h2 {
+    font-size: 1.5rem;
+    font-family: 'Sofadi One', sans-serif;
+    margin-bottom: 1rem;
+    color: #fcfbfb;
+}
+
+.events ul {
+    padding-left: 0;
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+.events li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.events li:hover {
+    background-color: #e6f7ff;
+    color: #0055a5;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.events-weather {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-primary);
+}
+
+.weather-forecast {
+    display: flex;
+    gap: 2rem;
+    padding: 10px;
+    flex: 0.8;
+    justify-content: space-between;
+    border: 2px solid white;
+}
+
+.weather-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.weather-card h2 {
+    font-size: 1.5rem;
+    font-family: 'Sofadi One', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.temperature {
+    text-align: left;
+}
+
+.temp-value {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.temp-description {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.forecast-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.forecast-card h2 {
+    font-size: 1.5rem;
+    font-family: 'Sofadi One', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.forecast-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.forecast-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.forecast-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.forecast-day {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.forecast-temp {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+.weather-forecast,
+.weather-card,
+.forecast-card,
+.weather-info,
+.forecast-item,
+.temp-value,
+.temp-description,
+.forecast-temp {
+    color: white;
+}
+
+#spotlight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--color-border);
+}
+
+.spotlight-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.spotlight-card img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.spotlight-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.spotlight-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info strong {
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+
+    .hero-card {
+        padding: 20px;
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .hero-card h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-card p {
+        font-size: 1em;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+
+    .events-weather {
+        flex-direction: column;
+    }
+
+    .weather-forecast {
+        flex-direction: column;
+    }
+
+    .weather-card,
+    .forecast-card {
+        margin-bottom: 1rem;
+    }
+
+    .forecast-item img {
+        margin-bottom: 10px;
+    }
+
+    #spotlight-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spotlight-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .spotlight-card img {
+        width: 50%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Dynamic Web Fundamentals. Page created by Icaro Angelo covering dynamic web design fundamentals, including HTML, CSS, and JavaScript.">
+    <meta name="author" content="Icaro Angelo">
+    <title>WDD 231 - Chamber of Commerce - Icaro Angelo</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/base.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="logo-box">
+            <a href="directory.html">
+                <img src="images/favicon.webp" alt="Business Chamber logo" class="logo" width="323">
+            </a>
+        </div>
+
+        <nav class="header-nav" id="nav-menu">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-links">HOME</a></li>
+                <li><a href="discover.html" class="nav-links">DISCOVER</a></li>
+                <li><a href="directory.html" class="nav-links">DIRECTORY</a></li>
+                <li><a href="join.html" class="nav-links">JOIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-card">
+                <h1>Welcome to Our Community</h1>
+                <p>Empowering Connections, Building Growth</p>
+                <p>Join us in fostering collaboration, promoting local businesses, and contributing to the development of a thriving community. We are dedicated to creating opportunities and building lasting relationships that help everyone succeed.</p>
+
+                <div class="cta-buttons">
+                    <a href="join.html" class="btn join-btn">Join</a>
+                    <a href="discover.html" class="btn explore-btn">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="events-weather">
+        <div class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Business Networking - Feb 12</li>
+                <li>Workshop on Marketing - Mar 8</li>
+                <li>Annual Gala - Apr 20</li>
+            </ul>
+        </div>
+        <div class="weather-forecast">
+            <div id="current-weather">
+                <h2>Current Weather</h2>
+                <p>Loading...</p>
+            </div>
+            <div id="forecast">
+                <h2>Weather Forecast</h2>
+                <p>Loading...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="spotlight">
+        <div id="spotlight-cards" class="spotlight-cards-container"></div>
+    </section>
+    
+    
+    <footer>
+        <div class="footer-left">
+            <h3>Chamber of Commerce</h3>
+            <p><strong>Contact Us</strong></p>
+            <p>📧 chamberofcommerce@gmail.com</p>
+            <p>📞 (956) 241-0129</p>
+            <p>📍 285 Random Ave</p>
+            <p>371 - Guarulhos, SP, Brazil</p>
+        </div>
+        <div class="footer-center">
+            <a href="https://facebook.com" class="social-icon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" class="social-icon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/X_icon.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" class="social-icon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://tiktok.com" class="social-icon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg" alt="TikTok">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>© 2025 Icaro Angelo - WDD231</p>
+            <p>Last modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+    
+    
+    
+
+    <script src="scripts/members.js" defer></script>
+</body>
+
+</html>
