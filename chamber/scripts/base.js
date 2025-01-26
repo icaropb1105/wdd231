@@ -108,16 +108,13 @@ fetch(currentWeatherEndpoint)
     .then(data => {
         const weatherDiv = document.getElementById("current-weather");
         
-        // Limpa o conteúdo atual da div
         weatherDiv.innerHTML = "";
 
-        // Adiciona o título "Current Weather"
         weatherDiv.innerHTML += `<h2>Current Weather</h2>`;
 
         const icon = data.weather[0].icon; // Código do ícone
         const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`; // URL do ícone
 
-        // Arredonda a temperatura para o inteiro mais próximo
         const temperature = Math.round(data.main.temp);
 
         weatherDiv.innerHTML += `
@@ -135,27 +132,21 @@ fetch(forecastEndpoint)
     .then(data => {
         const forecastDiv = document.getElementById("forecast");
         
-        // Adiciona o título de previsão do tempo
         forecastDiv.innerHTML = `<h2>Weather Forecast</h2>`;
 
-        // Agrupar as previsões por dia
         const forecastByDay = {};
         
-        // Itera sobre a lista de previsões
         data.list.forEach(forecast => {
             const date = new Date(forecast.dt * 1000);
             const day = date.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
             
-            // Agrupa a previsão por dia (apenas a primeira previsão do dia)
             if (!forecastByDay[day]) {
                 forecastByDay[day] = forecast;
             }
         });
 
-        // Obter os 5 primeiros dias
         const forecastDays = Object.keys(forecastByDay).slice(0, 5);
         
-        // Criar a exibição da previsão para os 5 primeiros dias
         const forecasts = forecastDays.map(day => {
             const forecast = forecastByDay[day];
             const temperature = Math.round(forecast.main.temp); // Arredondar a temperatura
@@ -169,26 +160,22 @@ fetch(forecastEndpoint)
             `;
         });
 
-        // Atualiza a interface com a previsão dos 5 primeiros dias
-        forecastDiv.innerHTML += forecasts.join("");  // Adiciona as previsões abaixo do título
+        forecastDiv.innerHTML += forecasts.join("");  
     })
     .catch(error => console.error("Error fetching weather forecast:", error));
 
-fetch('data/members.json')  // Caminho do arquivo JSON
+fetch('data/members.json')  
     .then(response => response.json())
     .then(data => {
-        // Filtrar membros Gold e Silver
         const spotlightMembers = data.filter(member => member.membershipLevel === 1 || member.membershipLevel === 2);
         
-        // Randomizar a seleção de membros
         const randomMembers = [];
         while (randomMembers.length < 3 && spotlightMembers.length > 0) {
             const randomIndex = Math.floor(Math.random() * spotlightMembers.length);
             randomMembers.push(spotlightMembers[randomIndex]);
-            spotlightMembers.splice(randomIndex, 1); // Remove o membro selecionado
+            spotlightMembers.splice(randomIndex, 1); 
         }
 
-        // Gerar os cartões de destaque
         const spotlightContainer = document.getElementById('spotlight-cards');
         spotlightContainer.innerHTML = randomMembers.map(member => {
             return `
