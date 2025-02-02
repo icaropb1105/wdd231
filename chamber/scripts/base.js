@@ -194,3 +194,21 @@ fetch('data/members.json')
         }).join('');
     })
     .catch(error => console.error("Error loading data:", error));
+
+
+    
+
+/*Join!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+// Set the current timestamp when the page loads
+document.getElementById("timestamp").value = new Date().toISOString();
+
+// Open modal
+function openModal(level) {
+    document.getElementById(level + '-modal').style.display = "block";
+}
+
+// Close modal
+function closeModal(level) {
+    document.getElementById(level + '-modal').style.display = "none";
+}
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Chamber of Commerce by Icaro Angelo. Become part of a dynamic business community with access to exclusive opportunities.">
+    <meta name="author" content="Icaro Angelo">
+    <title>Chamber of Commerce - Join Page</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.webp" type="image/webp">
+
+    <!-- Meta OG Tags -->
+    <meta property="og:title" content="Chamber of Commerce - Home Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/favicon.webp" />
+    <meta property="og:url" content="https://icaropb1105.github.io/wdd231/chamber/index.html" />
+
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/base.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="logo-box">
+            <a href="directory.html">
+                <img src="images/favicon.webp" alt="Business Chamber logo" class="logo" width="323">
+            </a>
+        </div>
+
+        <nav class="header-nav" id="nav-menu">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-links">HOME</a></li>
+                <li><a href="discover.html" class="nav-links">DISCOVER</a></li>
+                <li><a href="directory.html" class="nav-links">DIRECTORY</a></li>
+                <li><a href="join.html" class="nav-links">JOIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-wrapper">
+        <!-- Form -->
+        <div class="form-container">
+            <form action="thankyou.html" method="GET" class="form-container">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required title="Enter your first name"
+                    autocomplete="given-name">
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required title="Enter your last name"
+                    autocomplete="family-name">
+
+                <label for="organization-title">Organizational Title:</label>
+                <input type="text" id="organization-title" name="organization-title" required
+                    title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required title="Enter your email" autocomplete="email"
+                    placeholder="example@domain.com">
+
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required title="Enter your mobile number" autocomplete="tel">
+
+                <label for="business-name">Business/Organization Name:</label>
+                <input type="text" id="business-name" name="business-name" required title="Enter your business name"
+                    autocomplete="organization">
+
+                <label for="membership-level">Membership Level:</label>
+                <select id="membership-level" name="membership-level" required title="Select your membership level">
+                    <option value="np-membership">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+
+                <label for="organization-description">Business/Organization Description:</label>
+                <textarea id="organization-description" name="organization-description"
+                    title="Describe your business/organization"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Membership Cards -->
+        <div class="membership-container">
+            <div class="membership-card">
+                <h3>NP Membership</h3>
+                <p>Non-profit organization, no fee.</p>
+                <button onclick="openModal('np')">More Info</button>
+            </div>
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <p>Basic benefits with a small fee.</p>
+                <button onclick="openModal('bronze')">More Info</button>
+            </div>
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <p>Enhanced benefits with moderate fee.</p>
+                <button onclick="openModal('silver')">More Info</button>
+            </div>
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <p>Premium benefits with a high fee.</p>
+                <button onclick="openModal('gold')">More Info</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Membership Modals -->
+    <div id="np-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('np')">&times;</span>
+            <h2>NP Membership Benefits</h2>
+            <p>Non-profit organizations are offered complimentary membership to the Chamber, providing access to a wide range of exclusive resources designed to enhance their operations and outreach. These include free access to workshops, networking events, and special grants that can assist with operational and fundraising efforts. This membership ensures that non-profits can grow and engage with other businesses and organizations for greater community impact without worrying about membership fees.</p>
+        </div>
+    </div>
+    
+    <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('bronze')">&times;</span>
+            <h2>Bronze Membership Benefits</h2>
+            <p>With a Bronze membership, you gain access to essential benefits that help your business or organization grow. Members at this level enjoy discounts on Chamber-hosted events, including conferences, workshops, and networking opportunities. Additionally, Bronze members receive training resources aimed at helping them improve business operations, from marketing tips to financial management strategies. It's an affordable way to get started and begin building valuable connections within the business community.</p>
+        </div>
+    </div>
+    
+    <div id="silver-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('silver')">&times;</span>
+            <h2>Silver Membership Benefits</h2>
+            <p>Silver members enjoy an enhanced set of benefits that provide more exposure and specialized resources. In addition to all the Bronze membership perks, Silver members have access to exclusive events, including VIP networking sessions and industry-specific seminars. You'll also receive more targeted marketing support, such as promotional opportunities through the Chamber’s platforms, special features in the Chamber's newsletter, and social media shoutouts. This membership tier is ideal for businesses looking to increase their visibility and access advanced training and support.</p>
+        </div>
+    </div>
+    
+    <div id="gold-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('gold')">&times;</span>
+            <h2>Gold Membership Benefits</h2>
+            <p>The Gold Membership offers the highest level of benefits available, designed for businesses and organizations looking for maximum exposure and exclusive support. Gold members receive all the perks from the Silver and Bronze memberships, plus added benefits like prominent spotlight positions on the Chamber's website, a higher priority for event invitations, and additional discounts on event sponsorships. Furthermore, Gold members can enjoy one-on-one consulting sessions with industry experts, access to a dedicated account manager, and first-in-line access to special promotions and opportunities. This tier is perfect for businesses that want to stand out and maximize their engagement with the Chamber and the broader business community.</p>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="footer-left">
+            <h3>Chamber of Commerce</h3>
+            <p><strong>Contact Us</strong></p>
+            <p>📧 chamberofcommerce@gmail.com</p>
+            <p>📞 (956) 241-0129</p>
+            <p>📍 285 Random Ave</p>
+            <p>371 - Guarulhos, SP, Brazil</p>
+        </div>
+        <div class="footer-center">
+            <a href="https://facebook.com" class="social-icon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                    alt="Facebook">
+            </a>
+            <a href="https://twitter.com" class="social-icon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/X_icon.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" class="social-icon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://tiktok.com" class="social-icon" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg" alt="TikTok">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>© 2025 Icaro Angelo - WDD231</p>
+            <p>Last modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/members.js" defer></script>
+</body>
+
+</html>
