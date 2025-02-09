@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Bosque Maia",
+    "address": "Av. Paulo Faccini, Guarulhos, SP, 07170-330",
+    "description": "A serene urban park featuring walking trails, a lake, and playgrounds, perfect for relaxation and outdoor activities.",
+    "cost": "Free",
+    "image": "../images/bosque-maia.webp"
+  },
+  {
+    "name": "Zoológico Municipal de Guarulhos",
+    "address": "Av. Da. Glória Pagnoncelli, 344, Guarulhos, SP",
+    "description": "A municipal zoo housing a variety of animal species, providing educational and recreational experiences.",
+    "cost": "R$10 for adults, R$5 for children (varies)",
+    "image": "../images/Zoo-Guarulhos.webp"
+  },
+  {
+    "name": "Parque Shopping Maia",
+    "address": "Av. Bartholomeu de Carlos, 230 (R. Dona Tecla), Guarulhos, SP, 07097-420",
+    "description": "A popular shopping mall with retail stores, dining options, and entertainment facilities.",
+    "cost": "Free to enter, but shopping and entertainment costs vary",
+    "image": "../images/Shopping-parque-maia.webp"
+  },
+  {
+    "name": "Catedral Nossa Senhora da Conceição",
+    "address": "Praça Teresa Cristina, Guarulhos, SP, 07023-070",
+    "description": "A historic cathedral known for its architectural beauty and cultural significance.",
+    "cost": "Free",
+    "image": "../images/catedral.webp"
+  },
+  {
+    "name": "Shopping Bonsucesso",
+    "address": "Av. Dom Pedro II, 176, Guarulhos, SP, 07180-000",
+    "description": "A shopping center featuring retail stores, dining options, and entertainment services. A popular spot for both shopping and leisure.",
+    "cost": "Free to enter, but shopping and entertainment costs vary",
+    "image": "../images/Shopping-bonsucesso.webp"
+  },
+  {
+    "name": "Lago dos Patos",
+    "address": "R. Piracanjuba, 100, Guarulhos, SP",
+    "description": "A picturesque lake in a park, perfect for leisurely walks and enjoying nature.",
+    "cost": "Free",
+    "image": "../images/lagoa.webp"
+  },
+  {
+    "name": "Cinépolis",
+    "address": "Parque Shopping Maia (Piso 4), Guarulhos, SP, 07097-420",
+    "description": "A modern cinema complex offering the latest movie releases in a comfortable setting.",
+    "cost": "Ticket prices vary, approximately R$30",
+    "image": "../images/cinepolis.webp"
+  },
+  {
+    "name": "Museu de Arte de Guarulhos",
+    "address": "Av. Monteiro Lobato, 2555, Guarulhos, SP",
+    "description": "A local museum showcasing contemporary art exhibitions and cultural events.",
+    "cost": "R$15 for adults, R$7 for students",
+    "image": "../images/pinacoteca.webp"
+  }
+]

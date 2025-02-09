@@ -1,0 +1,433 @@
+/* Reset Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #081c31;
+    --color-secondary: #9d9d9e;
+    --color-background: #f8f9fa;
+    --color-text: #333;
+    --color-text-light: #555;
+    --color-border: #ddd;
+    --color-hover: #0055a5;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .logo-box {
+    flex-grow: 1;
+}
+
+header .logo-box img {
+    width: 100px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: white;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-left: 50px;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links:hover {
+    color: var(--color-secondary);
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+/* Seção Principal */
+.discover-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #fff, #f1f1f1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1300px;
+    margin: 40px auto;
+    
+}
+
+.discover-section > h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px 10px;
+    border-top: 2px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    border-radius: 10%;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 100px ;
+    animation: fadeIn 1s ease-in-out, glow 2s infinite alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(9, 1, 80, 0.8), 0 0 20px rgba(26, 188, 156, 0.6);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(26, 188, 156, 1), 0 0 30px rgba(26, 188, 156, 0.8);
+    }
+}
+
+
+/* Grid dos Cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 25px;
+    justify-items: center;
+    padding: 0 20px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* Estilização Premium do Card */
+.discover-item {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid var(--color-border);
+    border-top: 4px solid var(--color-primary);
+    border-right: 4px solid var(--color-primary);
+
+}
+
+.discover-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem do Card */
+.discover-item img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--color-highlight);
+}
+
+/* Título do Card */
+.discover-item h2 {
+    font-size: 1.3rem;
+    color: #3a3a3a;
+    margin: 20px 15px 10px;
+    font-weight: 600;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.discover-item:hover h2 {
+    color: var(--color-highlight);
+}
+
+/* Endereço */
+.discover-item address {
+    font-size: 1rem;
+    color: #3a3a3a;
+    margin: 10px 15px;
+    font-style: normal;
+    text-align: center;
+}
+
+.discover-item .price {
+    font-size: 1.2rem;
+    color: var(--color-highlight);
+    font-weight: bold;
+    margin: 10px 15px;
+    text-align: center;
+}
+
+.discover-item p {
+    font-size: 0.95rem;
+    color: #3a3a3a;
+    margin: 0 15px 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#sidebar-message {
+    background: #f8f9fa; /* Cor de fundo suave */
+    color: #2c3e50; /* Texto escuro para contraste */
+    font-size: 1rem;
+    padding: 20px;
+    border-left: 5px solid #1abc9c; /* Borda de destaque */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 30px auto; /* Centraliza horizontalmente */
+    text-align: center;
+    font-weight: bold;
+    max-width: 400px; /* Ajustável conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+}
+
+/* Centralizar Sidebar na Tela */
+.sidebar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10px; /* Altura mínima para evitar ficar muito colado */
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .discover-item {
+        box-shadow: none;
+        transition: none;
+        transform: none;
+    }
+
+    .discover-item img {
+        height: 160px;
+        border-bottom: 2px solid var(--color-border);
+    }
+
+    .discover-item h2 {
+        font-size: 1.1rem;
+    }
+
+    .discover-item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .discover-item:hover h2,
+    .discover-item:hover .price,
+    .discover-item:hover address {
+        color: inherit;
+    }
+    .discover-section h2 {
+        font-size: 1rem;
+        text-shadow: none;
+        transform: none;
+        background: none;
+        -webkit-text-fill-color: inherit;
+        color: #2c3e50;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .discover-section h2::before,
+    .discover-section h2::after {
+        content: none;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .header-nav {
+        display: none;
+    }
+    header .logo-box img {
+        margin-left: 0px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    #nav-menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .discover-item h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .discover-item {
+        max-width: 90%;
+    }
+
+    .discover-item h2 {
+        font-size: 0.95rem;
+    }
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-left h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 47px;
+    height: 47px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right p {
+    font-size: 17px;
+}
+
+/* Responsividade do Footer */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        margin: 10px 0;
+        flex: none;
+    }
+
+    .footer-center {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer-left h3 {
+        font-size: 18px;
+    }
+
+    .footer-left p,
+    .footer-right p {
+        font-size: 16px;
+    }
+
+}

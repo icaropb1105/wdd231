@@ -779,5 +779,38 @@ footer {
 
 
 
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container and Layout */
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Discover Container Layout */
+.discover-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default for small screens */
+    grid-gap: 20px;
+    grid-template-areas:
+        "item1 item2"
+        "item3 item4"
+        "item5 item6"
+        "item7 item8";
+}
+
+
+
+
+
+
+
+
 
 

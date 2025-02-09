@@ -19,13 +19,13 @@ const hamburgerMenu = document.getElementById('hamburger-menu');
 const navMenu = document.getElementById('nav-menu');  // O ID correto
 
 hamburgerMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('active');  // Alterna a classe 'active' para mostrar/ocultar
+    navMenu.classList.toggle('active');  
 });
 
 
 
 function displayMembers(members) {
-    const container = document.querySelector('.business-grid'); // O container onde os cards vão ser exibidos
+    const container = document.querySelector('.business-grid'); 
 
     container.innerHTML = '';
 
@@ -211,4 +211,10 @@ function openModal(level) {
 function closeModal(level) {
     document.getElementById(level + '-modal').style.display = "none";
 }
+
+
+
+
+
+
 
