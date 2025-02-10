@@ -5,30 +5,39 @@ hamburgerMenu.addEventListener('click', () => {
     navMenu.classList.toggle('active');  
 });
 
-
-// Fetch the data from places.json
 fetch('data/places.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('cards-container');
+    
+    // Determine the correct path based on environment (local vs GitHub Pages)
+    const isGitHubPages = window.location.hostname === 'icaropb1105.github.io';
+    const baseImagePath = isGitHubPages ? 'images/' : 'images/'; 
 
     data.forEach((place, index) => {
         const card = document.createElement('div');
         card.classList.add('discover-item');
         card.id = `item${index + 1}`;
 
-        const imagePath = `images/${place.image}`; 
+        const imagePath = baseImagePath + place.image;
         console.log('Trying image from path:', imagePath); 
 
         const img = document.createElement("img");
         img.alt = place.name;
         img.loading = "lazy";
-        img.src = imagePath; 
+        img.src = imagePath;
 
-        // Handle image errors
+        // Handle image errors (custom fallback images for specific places)
         img.onerror = () => {
             console.error(`Failed to load image: ${imagePath}`);
-            img.src = "images/placeholder.webp";  
+
+            if (place.name === "Parque Shopping Maia") {
+                img.src = "placeholder1.webp";  // Custom placeholder for Parque Shopping Maia
+            } else if (place.name === "Shopping Bonsucesso") {
+                img.src = "placeholder2.webp";  // Custom placeholder for Shopping Bonsucesso
+            } else {
+                img.src = "images/placeholder1.webp";  
+            }
         };
 
         card.innerHTML = `
@@ -47,31 +56,13 @@ fetch('data/places.json')
     console.error('Error:', error);
   });
 
-  const isGitHubPages = window.location.hostname === 'icaropb1105.github.io';
-
-const paths = [
-    isGitHubPages ? 'images/' : '../images/',  
-    'images/'  
-];
-
-function loadImage(index) {
-    if (index >= paths.length) {
-        img.src = "/wdd231/chamber/images/placeholder.webp";
-        return;
-    }
-    img.src = paths[index] + place.image;
-    img.onerror = () => loadImage(index + 1);
-}
-
-
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const sidebar = document.getElementById("sidebar-message"); // Target the sidebar message area
+// Sidebar message for last visit
+document.addEventListener("DOMContentLoaded", () => {
+    const sidebar = document.getElementById("sidebar-message");
     const lastVisit = localStorage.getItem("lastVisit");
     const currentVisit = new Date().getTime();
 
     if (!lastVisit) {
-        // First visit
         sidebar.textContent = "Welcome! Let us know if you have any questions.";
     } else {
         const lastVisitDate = new Date(parseInt(lastVisit));
@@ -87,11 +78,10 @@ function loadImage(index) {
         }
     }
 
-    
-    // Store current visit time in localStorage
     localStorage.setItem("lastVisit", currentVisit);
 });
 
+// Display the last modified date
 document.addEventListener("DOMContentLoaded", () => {
     const lastModifiedElement = document.getElementById("last-modified");
     if (lastModifiedElement) {
@@ -108,7 +98,3 @@ document.addEventListener("DOMContentLoaded", () => {
         lastModifiedElement.textContent = `Last Updated: ${formattedDate}`;
     }
 });
-
-
-
-
