@@ -47,6 +47,23 @@ fetch('data/places.json')
     console.error('Error:', error);
   });
 
+  const isGitHubPages = window.location.hostname === 'icaropb1105.github.io';
+
+const paths = [
+    isGitHubPages ? 'images/' : '../images/',  
+    'images/'  
+];
+
+function loadImage(index) {
+    if (index >= paths.length) {
+        img.src = "/wdd231/chamber/images/placeholder.webp";
+        return;
+    }
+    img.src = paths[index] + place.image;
+    img.onerror = () => loadImage(index + 1);
+}
+
+
 
   document.addEventListener("DOMContentLoaded", () => {
     const sidebar = document.getElementById("sidebar-message"); // Target the sidebar message area
