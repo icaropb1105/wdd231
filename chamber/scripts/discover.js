@@ -18,10 +18,8 @@ fetch('data/places.json')
         card.id = `item${index + 1}`;
 
         const paths = [
-            `images/${place.image}`,                      
-            `/wdd231/chamber/images/${place.image}`,     
-            `../images/${place.image}`,                  
-            `/images/${place.image}`                     
+            `/wdd231/chamber/images/${place.image}`,
+            `images/${place.image}`,                 
         ];
 
         const img = document.createElement("img");
