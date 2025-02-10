@@ -5,12 +5,12 @@ hamburgerMenu.addEventListener('click', () => {
     navMenu.classList.toggle('active');  
 });
 
+// Fetch the data from places.json
 fetch('data/places.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('cards-container');
     
-    // Determine the correct path based on environment (local vs GitHub Pages)
     const isGitHubPages = window.location.hostname === 'icaropb1105.github.io';
     const baseImagePath = isGitHubPages ? 'images/' : 'images/'; 
 
@@ -27,17 +27,9 @@ fetch('data/places.json')
         img.loading = "lazy";
         img.src = imagePath;
 
-        // Handle image errors (custom fallback images for specific places)
         img.onerror = () => {
             console.error(`Failed to load image: ${imagePath}`);
-
-            if (place.name === "Parque Shopping Maia") {
-                img.src = "placeholder1.webp";  // Custom placeholder for Parque Shopping Maia
-            } else if (place.name === "Shopping Bonsucesso") {
-                img.src = "placeholder2.webp";  // Custom placeholder for Shopping Bonsucesso
-            } else {
-                img.src = "images/placeholder1.webp";  
-            }
+            img.src = "images/placeholder2.webp";  
         };
 
         card.innerHTML = `
