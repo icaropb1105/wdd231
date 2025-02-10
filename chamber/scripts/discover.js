@@ -17,25 +17,19 @@ fetch('data/places.json')
         card.classList.add('discover-item');
         card.id = `item${index + 1}`;
 
-        const paths = [
-            `/wdd231/chamber/images/${place.image}`,
-            `images/${place.image}`,                 
-        ];
+        const imagePath = `images/${place.image}`; 
+        console.log('Trying image from path:', imagePath); 
 
         const img = document.createElement("img");
         img.alt = place.name;
         img.loading = "lazy";
+        img.src = imagePath; 
 
-        function loadImage(index) {
-            if (index >= paths.length) {
-                img.src = "/wdd231/chamber/images/placeholder.webp"; 
-                return;
-            }
-            img.src = paths[index];
-            img.onerror = () => loadImage(index + 1); 
-        }
-
-        loadImage(0); 
+        // Handle image errors
+        img.onerror = () => {
+            console.error(`Failed to load image: ${imagePath}`);
+            img.src = "images/placeholder.webp";  
+        };
 
         card.innerHTML = `
             <h2>${place.name}</h2>
@@ -50,8 +44,9 @@ fetch('data/places.json')
     });
   })
   .catch(error => {
-    console.error('Erro ao carregar os dados dos locais:', error);
+    console.error('Error:', error);
   });
+
 
   document.addEventListener("DOMContentLoaded", () => {
     const sidebar = document.getElementById("sidebar-message"); // Target the sidebar message area
