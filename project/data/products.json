@@ -1,0 +1,198 @@
+[
+  {
+    "id": 1,
+    "name": "Boxing Gloves",
+    "description": "Durable boxing gloves with extra padding for enhanced comfort and protection.",
+    "price": 49.99,
+    "image": "images/glove1.jpg",
+    "features": [
+      "Provides superior grip for all levels of training.",
+      "Extra padding ensures comfort during intense sessions.",
+      "Designed for durability and long-lasting performance.",
+      "Perfect for beginners and professionals alike."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Boxing Gloves - Black Edition",
+    "description": "High-performance boxing gloves, sleek black design with superior grip.",
+    "price": 59.99,
+    "image": "images/glove2.webp",
+    "features": [
+      "Sleek black design with a premium look.",
+      "Enhanced grip for better control during sparring.",
+      "Breathable material for added comfort.",
+      "Ideal for competitive athletes looking for style and function."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Boxing Gloves - Red Edition",
+    "description": "Classic red boxing gloves, designed for durability and comfort.",
+    "price": 54.99,
+    "image": "images/glove3.webp",
+    "features": [
+      "Classic red design for a bold statement.",
+      "Extra comfort padding for those long training sessions.",
+      "Durable build for repeated use without wear.",
+      "Perfect for intense workouts and sparring."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Protective Headgear",
+    "description": "Top-rated headgear for full head protection in boxing and martial arts.",
+    "price": 89.99,
+    "image": "images/kpct1.jpg",
+    "features": [
+      "Full head protection with advanced padding.",
+      "Comfortable fit with adjustable straps.",
+      "Offers optimal protection during full-contact sparring.",
+      "Ideal for both boxing and mixed martial arts practitioners."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Karate Gi",
+    "description": "Traditional karate gi made from lightweight, breathable fabric for comfortable training.",
+    "price": 59.99,
+    "image": "images/foot1.webp",
+    "features": [
+      "Lightweight fabric that allows for maximum movement.",
+      "Breathable material for comfort during extended training sessions.",
+      "Durable stitching to withstand the rigors of martial arts.",
+      "Perfect for both beginners and advanced practitioners."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Jiu-Jitsu Belt",
+    "description": "High-quality Jiu-Jitsu belt available in various colors for all levels.",
+    "price": 19.99,
+    "image": "images/faixa1.webp",
+    "features": [
+      "Available in a wide range of colors to represent your rank.",
+      "Made from durable, high-quality cotton for strength.",
+      "Comfortable to wear during long training sessions.",
+      "Perfect for all levels of Jiu-Jitsu practitioners."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "MMA Shin Guards",
+    "description": "Protective shin guards designed for MMA, offering great protection and mobility.",
+    "price": 34.99,
+    "image": "images/kcpt2.webp",
+    "features": [
+      "Lightweight design for maximum mobility.",
+      "High-density foam padding for excellent protection.",
+      "Made to endure the toughest training sessions.",
+      "Perfect for MMA, kickboxing, and other combat sports."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Judo Kimono",
+    "description": "Heavy-duty judo kimono made from durable material, perfect for judo practice.",
+    "price": 79.99,
+    "image": "images/kimono1.jpg",
+    "features": [
+      "Durable fabric that withstands the rigors of judo practice.",
+      "Reinforced stitching for enhanced durability.",
+      "Perfect fit for comfortable and unhindered movement.",
+      "Ideal for both beginners and advanced judo practitioners."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Boxing Gloves - Vintage",
+    "description": "Vintage-style boxing gloves with premium leather and a retro look.",
+    "price": 79.99,
+    "image": "images/glove2.webp",
+    "features": [
+      "Retro design with premium leather for a vintage feel.",
+      "Ideal for collectors and boxing enthusiasts.",
+      "Durable construction for reliable performance.",
+      "Perfect balance of style and function for serious boxers."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Chest Protector",
+    "description": "A basic chest protector designed for training purposes, ideal for sparring.",
+    "price": 39.99,
+    "image": "images/chest1.webp",
+    "features": [
+      "Provides essential chest protection during training.",
+      "Lightweight design for enhanced comfort.",
+      "Adjustable straps for a secure fit.",
+      "Ideal for beginners and intermediate-level sparring."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Chest Protector - Pro Edition",
+    "description": "A top-tier chest protector designed for serious athletes and sparring.",
+    "price": 69.99,
+    "image": "images/chest2.webp",
+    "features": [
+      "Premium protection for the chest area during intense training.",
+      "Durable padding and adjustable straps for a custom fit.",
+      "Perfect for high-impact sparring and combat sports.",
+      "Designed for professional athletes seeking top protection."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "MMA Shin Guard - Advanced",
+    "description": "High-quality MMA shin guards offering top-tier protection and mobility.",
+    "price": 59.99,
+    "image": "images/foot2.webp",
+    "features": [
+      "Advanced protection for your shins during MMA and kickboxing.",
+      "Breathable material for a comfortable fit.",
+      "Designed for full mobility and maximum flexibility.",
+      "Provides excellent cushioning and support during sparring."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "MMA Shin Guard - Basic",
+    "description": "Budget-friendly shin guards designed for beginner MMA fighters.",
+    "price": 19.99,
+    "image": "images/foot3.webp",
+    "features": [
+      "Affordable protection for entry-level MMA fighters.",
+      "Lightweight design for basic protection.",
+      "Simple construction for ease of use.",
+      "Perfect for beginner training and casual sparring."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Judo Kimono - Premium",
+    "description": "A high-quality judo kimono built for durability and comfort during intense practice.",
+    "price": 99.99,
+    "image": "images/kimono2.webp",
+    "features": [
+      "Premium cotton fabric for long-lasting wear.",
+      "Reinforced stitching for strength and durability.",
+      "Designed for optimal comfort during judo practice.",
+      "Perfect for competitive judo athletes."
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Kickboxing Shorts - Premium",
+    "description": "Premium Muay Thai shorts designed for comfort and mobility.",
+    "price": 49.99,
+    "image": "images/short1.webp",
+    "features": [
+      "Lightweight satin material for maximum comfort.",
+      "Perfect fit for kickboxing and Muay Thai movements.",
+      "Breathable fabric to keep you cool during training.",
+      "Stylish design for a professional look in the ring."
+    ]
+  }
+  
+]

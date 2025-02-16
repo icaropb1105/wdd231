@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Combat Sports Gear Store, your go-to place for high-quality boxing, MMA, and martial arts equipment. Explore our wide range of protective gear, apparel, and accessories for athletes of all levels.">
+    <meta name="description" content="Explore the wide range of high-quality combat sports gear at Combat Sports Gear Store. Find boxing gloves, MMA equipment, martial arts apparel, and accessories to elevate your performance.">
     <meta name="author" content="Icaro Angelo">
-    <title>Combat Sports Gear Store</title>
+    <title>Products - Combat Sports Gear Store</title>
 
     <!-- Meta OG Tags -->
-    <meta property="og:title" content="Combat Sports Gear Store"/>
+    <meta property="og:title" content="Products - Combat Sports Gear Store"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="images/logo.webp"/>
-    <meta property="og:url" content="https://icarangelo.github.io/index.html"/>
+    <meta property="og:url" content="https://icarangelo.github.io/project/products.html"/>
   <link type="text/css" rel="stylesheet" href="styles/base.css" />
 </head>
 
-<body>
-
+<body class="product-page">
+  
     <header>
         <!-- Navigation Bar -->
         <nav>
@@ -33,26 +33,26 @@
             <li><a href="siteplan.html">Site Plan</a></li>
           </ul>
         </nav> 
-      </header>
+    </header>
 
     <main>
-    <section class="hero">
-        <img src="images/hero.jpg" alt="Combat Sports Gear" class="hero-image" loading="lazy" />
-        
-        <div class="hero-content">
-          <h1>Your Ultimate Combat Sports Gear</h1>
-          <p>Shop the best equipment for martial arts, boxing, and more!</p>
-          <a href="products.html" class="cta-button">Shop Now</a>
-        </div>
-      </section>
-
-      <!-- Highlights Section -->
-    <section class="highlights">
-        <h2>Featured Products</h2>
-        <div class="highlight-products" id="highlight-products">
-        </div>
-      </section>
+        <section class="products-section">
+            <h1>Our Products</h1>
+            <div class="products-container" id="products-container">
+                <!-- Produtos serão carregados dinamicamente aqui -->
+            </div>
+        </section>
     </main>
+
+    <!-- Modal for displaying product details -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <div id="product-details">
+                <!-- Conteúdo dinâmico do produto será inserido aqui -->
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-content">
@@ -79,17 +79,15 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg" alt="TikTok">
             </a>
           </div>
-      
-          <!-- Copyright -->
           <div class="footer-bottom">
             <p>&copy; 2025 Combat Sports Gear Store. All rights reserved.</p>
             <p><strong>Last modified:</strong> <span id="last-modified-date"></span></p>
           </div>
         </div>
       </footer>
-      
 
-<script src="scripts/base.js"></script>
-</body>
+    <script src="scripts/base.js"></script>
+  
+</body> 
 
 </html>

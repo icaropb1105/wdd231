@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Combat Sports Gear Store, your go-to place for high-quality boxing, MMA, and martial arts equipment. Explore our wide range of protective gear, apparel, and accessories for athletes of all levels.">
+    <meta name="description" content="Contact page for Combat Sports Gear Store. Get in touch with us for any inquiries, product information, or customer support. We are here to help you with all your combat sports equipment needs.">
     <meta name="author" content="Icaro Angelo">
-    <title>Combat Sports Gear Store</title>
+    <title>Contact - Combat Sports Gear Store</title>
 
     <!-- Meta OG Tags -->
-    <meta property="og:title" content="Combat Sports Gear Store"/>
+    <meta property="og:title" content="Contact - Combat Sports Gear Store"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="images/logo.webp"/>
-    <meta property="og:url" content="https://icarangelo.github.io/index.html"/>
+    <meta property="og:url" content="https://icarangelo.github.io/project/contact.html"/>
   <link type="text/css" rel="stylesheet" href="styles/base.css" />
 </head>
 
-<body>
+<body id="contact-page">
+
 
     <header>
         <!-- Navigation Bar -->
@@ -35,26 +36,39 @@
         </nav> 
       </header>
 
-    <main>
-    <section class="hero">
-        <img src="images/hero.jpg" alt="Combat Sports Gear" class="hero-image" loading="lazy" />
-        
-        <div class="hero-content">
-          <h1>Your Ultimate Combat Sports Gear</h1>
-          <p>Shop the best equipment for martial arts, boxing, and more!</p>
-          <a href="products.html" class="cta-button">Shop Now</a>
-        </div>
-      </section>
+      <main>
+        <section id="contact-support">
+            <h2>Contact or Support</h2>
+            <p>If you have any questions or need assistance, please fill out the form below and our team will get back to you as soon as possible.</p>
+            
+            <form action="form.html" method="GET" target="_blank">
+                <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Your full name">
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Your email">
+          
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your phone (optional)" pattern="\d{1,13}">
+          
+              <label for="subject">Subject:</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select the subject</option>
+                <option value="question">Product Question</option>
+                <option value="issue">Order Issue</option>
+                <option value="other">Other</option>
+              </select>
+          
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Describe your question or issue"></textarea>
+          
+              <button type="submit">Send Message</button>
+            </form>
+          </section>
+          
+      </main>
 
-      <!-- Highlights Section -->
-    <section class="highlights">
-        <h2>Featured Products</h2>
-        <div class="highlight-products" id="highlight-products">
-        </div>
-      </section>
-    </main>
-
-    <footer>
+      <footer>
         <div class="footer-content">
           <div class="logo-info">
             <img src="images/logo.jpg" alt="Combat Gear Logo" class="footer-logo" />
@@ -79,17 +93,13 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg" alt="TikTok">
             </a>
           </div>
-      
-          <!-- Copyright -->
           <div class="footer-bottom">
             <p>&copy; 2025 Combat Sports Gear Store. All rights reserved.</p>
             <p><strong>Last modified:</strong> <span id="last-modified-date"></span></p>
           </div>
         </div>
       </footer>
-      
 
-<script src="scripts/base.js"></script>
+      <script src="scripts/base.js"></script>
+    
 </body>
-
-</html>

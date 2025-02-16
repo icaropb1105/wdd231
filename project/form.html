@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Summary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(145deg, #c1c1c1, #6e7f7d);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .summary-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px; 
+      text-align: left; 
+      transform: scale(0.98);
+      animation: popIn 0.6s ease-out;
+    }
+
+    /* Main Title */
+    h1 {
+      font-size: 1.5rem; 
+      font-weight: 500;
+      margin-bottom: 15px; 
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      text-align: center;
+    }
+
+    .summary-item {
+      margin: 12px 0; 
+    }
+
+    .summary-item label {
+      display: block;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 5px;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .summary-item p {
+      background: rgba(0, 0, 0, 0.05);
+      padding: 10px;
+      border-radius: 8px; 
+      color: #333;
+      font-size: 1rem; 
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+      transition: all 0.3s ease;
+    }
+
+    .summary-item p:hover {
+      background: rgba(0, 0, 0, 0.1);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Thank you message */
+    .thank-you {
+      font-size: 1rem; 
+      color: #333;
+      margin-top: 25px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    @keyframes popIn {
+      0% {
+        transform: scale(0.55);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .summary-item label {
+        font-size: 0.9rem;
+      }
+
+      .summary-item p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="summary-container">
+    <h1>Message Summary</h1>
+
+    <div class="summary-item">
+      <label for="summary-name">Name:</label>
+      <p id="summary-name"></p>
+    </div>
+
+    <div class="summary-item">
+      <label for="summary-email">Email:</label>
+      <p id="summary-email"></p>
+    </div>
+
+    <div class="summary-item">
+      <label for="summary-subject">Subject:</label>
+      <p id="summary-subject"></p>
+    </div>
+
+    <div class="summary-item">
+      <label for="summary-phone">Phone:</label>
+      <p id="summary-phone"></p>
+    </div>
+
+    <div class="summary-item">
+      <label for="summary-message">Message:</label>
+      <p id="summary-message"></p>
+    </div>
+
+    <div class="thank-you">
+      Thank you for reaching out! We will get back to you soon.
+    </div>
+
+  </div>
+
+  <script>
+    function getParameterByName(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    document.getElementById('summary-name').textContent = getParameterByName('name');
+    document.getElementById('summary-email').textContent = getParameterByName('email');
+    document.getElementById('summary-subject').textContent = getParameterByName('subject');
+    document.getElementById('summary-phone').textContent = getParameterByName('phone'); // Phone
+    document.getElementById('summary-message').textContent = getParameterByName('message');
+  </script>
+
+</body>
+</html>
