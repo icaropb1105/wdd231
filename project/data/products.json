@@ -4,7 +4,7 @@
     "name": "Boxing Gloves",
     "description": "Durable boxing gloves with extra padding for enhanced comfort and protection.",
     "price": 49.99,
-    "image": "images/glove1.jpg",
+    "image": "images/glove1.webp",
     "features": [
       "Provides superior grip for all levels of training.",
       "Extra padding ensures comfort during intense sessions.",
@@ -43,7 +43,7 @@
     "name": "Protective Headgear",
     "description": "Top-rated headgear for full head protection in boxing and martial arts.",
     "price": 89.99,
-    "image": "images/kpct1.jpg",
+    "image": "images/kpct1.webp",
     "features": [
       "Full head protection with advanced padding.",
       "Comfortable fit with adjustable straps.",
@@ -95,7 +95,7 @@
     "name": "Judo Kimono",
     "description": "Heavy-duty judo kimono made from durable material, perfect for judo practice.",
     "price": 79.99,
-    "image": "images/kimono1.jpg",
+    "image": "images/kimono1.webp",
     "features": [
       "Durable fabric that withstands the rigors of judo practice.",
       "Reinforced stitching for enhanced durability.",
